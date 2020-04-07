@@ -3,13 +3,10 @@
 USE AdventureWorks;
 GO
 
-DBCC SHOW_STATISTICS ("Sales.SalesOrderDetail", PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID);
-GO
+create nonclustered index Idx_on_PhoneLog_ID on PhoneLog(PhoneLogID)
 
+DBCC SHOW_STATISTICS('PhoneLog','Idx_on_PhoneLog_ID')
+ 
+ select 1.0/Count(Distinct PhoneLogID) from PhoneLog --depth index
 
-SELECT soh.AccountNumber
-		, soh.CustomerID
-		, sod.* 
-FROM Sales.SalesOrderDetail sod 
-JOIN Sales.SalesOrderHeader soh ON sod.SalesOrderID = soh.SalesOrderID;
-
+ select * from PhoneLog where PhoneLogID<260094
