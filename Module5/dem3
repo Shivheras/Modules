@@ -1,0 +1,15 @@
+
+
+USE AdventureWorks;
+GO
+
+DBCC SHOW_STATISTICS ("Sales.SalesOrderDetail", PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID);
+GO
+
+
+SELECT soh.AccountNumber
+		, soh.CustomerID
+		, sod.* 
+FROM Sales.SalesOrderDetail sod 
+JOIN Sales.SalesOrderHeader soh ON sod.SalesOrderID = soh.SalesOrderID;
+
