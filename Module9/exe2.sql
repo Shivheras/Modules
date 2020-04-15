@@ -2,7 +2,9 @@ Use MarketDev;
 GO
 
 
-CREATE PROCEDURE Marketing.spGetProductsByColor @Color nvarchar(16) AS
+CREATE PROCEDURE Marketing.spGetProductsByColor
+ @Color nvarchar(16)
+ AS
 SET NOCOUNT ON;
 BEGIN
 	SELECT p.ProductID,
