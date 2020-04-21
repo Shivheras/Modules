@@ -1,0 +1,6 @@
+C:\Users\Shivangi\source\repos\Manage\bin\Debug\Manage.dacpac
+C:\Users\Shivangi\source\repos\Manage\bin\Debug\Manage.dll
+C:\Users\Shivangi\source\repos\Manage\bin\Debug\Manage.pdb
+C:\Users\Shivangi\source\repos\Manage\obj\Debug\Manage.sqlprojAssemblyReference.cache
+C:\Users\Shivangi\source\repos\Manage\obj\Debug\Manage.dll
+C:\Users\Shivangi\source\repos\Manage\obj\Debug\Manage.pdb
